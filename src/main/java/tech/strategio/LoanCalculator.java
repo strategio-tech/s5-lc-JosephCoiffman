@@ -5,14 +5,16 @@ import java.util.Scanner;
 public class LoanCalculator {
 
     /**
-     * TODO: finish out this JavaDoc comment block.
-     * FIXME: WHAT DOES THIS METHOD DO?
-     * 
-     * @param ???
-     * @return ???
+     * This method calculates the amount that a person who is paying 10%
+     * of remaing loan will have to pay and how much is left over for three months.
+     * @param amount of loan
+     * @return the amount left after three months
      */
     static int getRemainingAmountIn3Months(int amount) {
-        // TODO: Add your code below
+        for(int x = 0; x < 3; x++){
+            amount = amount - (amount / 10);
+        }
+        return amount;
     }
 
     public static void main(String[] args) {
